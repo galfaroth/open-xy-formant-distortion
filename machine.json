@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sdk": "1.8",
+  "kind": "effect",
+  "description": "Spectral envelope warp, wavefolder and signed frequency shifter",
+  "dryLevel": 0
+}

@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "formantdist",
+  "name": "Formant by Veff",
+  "parameters": [
+    {
+      "id": "formant",
+      "label": "Formant",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": -12,
+        "maximum": 12
+      },
+      "display": "bipolar"
+    },
+    {
+      "id": "fold",
+      "label": "Fold",
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 1,
+        "maximum": 8
+      },
+      "display": "ratio"
+    },
+    {
+      "id": "shift",
+      "label": "Shift",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": -200,
+        "maximum": 200
+      },
+      "display": "bipolar"
+    },
+    {
+      "id": "dynamic",
+      "label": "Dynamic",
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "cutoff",
+      "label": "Cutoff",
+      "default": 1,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "resonance",
+      "label": "Emphasis",
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "response",
+      "label": "Response",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 2
+      },
+      "display": "ratio"
+    }
+  ],
+  "presets": {
+    "Neutral": {
+      "formant": 0.5,
+      "fold": 0,
+      "shift": 0.5,
+      "dynamic": 0,
+      "cutoff": 1,
+      "resonance": 0,
+      "response": 0.5,
+      "output": 0.5
+    },
+    "Vocal Edge": {
+      "formant": 0.75,
+      "fold": 0.25,
+      "shift": 0.5,
+      "dynamic": 0.5,
+      "cutoff": 0.2,
+      "resonance": 0.15,
+      "response": 0.5,
+      "output": 0.35
+    },
+    "Metal": {
+      "formant": 0.5,
+      "fold": 0.6,
+      "shift": 0.7,
+      "dynamic": 0,
+      "cutoff": 0.8,
+      "resonance": 0.4,
+      "response": 0.5,
+      "output": 0.25
+    },
+    "Low Warp": {
+      "formant": 0.1,
+      "fold": 0.2,
+      "shift": 0.45,
+      "dynamic": 0.7,
+      "cutoff": 0.1,
+      "resonance": 0.1,
+      "response": 0.7,
+      "output": 0.4
+    }
+  },
+  "resources": {
+    "bufferBytes": 512
+  },
+  "press": "page"
+}
